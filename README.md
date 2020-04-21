@@ -9,7 +9,8 @@ The addon just use a default class named *Generate_catafest_mesh*
 
 In this class you can add your source code.
 
-To install this addon download it from her.
+To install this addon download it from here.
+
 Open the Blender 3D software and from Menu - Edit - Preferences... - Add-ons select button Install and select teh zip file.
 
 ![Install addon](catafest_addon_start_install.png)
