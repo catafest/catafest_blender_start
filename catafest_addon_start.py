@@ -58,7 +58,14 @@ def reset_scene():
     for texture in bpy.data.textures:
         if not texture.users:
             bpy.data.textures.remove(texture)
+# Generate mesh            
+def generate_mesh(random_seed=''):
+    if random_seed:
+        seed(random_seed)
 
+    # Let's start with a unit BMesh cube scaled randomly
+    bm = bmesh.new()
+    bmesh.ops.create_cube(bm, size=1)
 
 if __name__ == "__main__":
     

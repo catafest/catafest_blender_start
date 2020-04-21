@@ -25,7 +25,7 @@ from bpy.types import Operator
 
 class Generate_catafest_mesh(Operator):
     """Procedurally generate a catafest 3D mesh from a random seed."""
-    bl_idname = "mesh.generate_catafest_mesh_001"
+    bl_idname = "mesh.generate_mesh"
     bl_label = "catafest_blender_start"
     bl_options = {'REGISTER', 'UNDO'}
 
@@ -33,7 +33,7 @@ class Generate_catafest_mesh(Operator):
 
 
     def execute(self, context):
-        catafest_addon_start.generate_catafest_mesh_001(
+        catafest_addon_start.generate_mesh(
             self.random_seed)
         return {'FINISHED'}
 
